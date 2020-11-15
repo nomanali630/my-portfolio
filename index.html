@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <title>My portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+</head>
+<body>
+    <div class="background">
+        <div class="nav">
+<a class="a active" href="#">HOME</a>
+<a class="b" href="#">ABOUT ME</a>
+<a class="c" href="#">GALLERY</a>
+<a class="d" href="#">CONTACT US</a>
+
+        </div>
+
+     <div class="content">
+
+      <div class="home">
+          <h1>I am Noman Ali</h1>
+          <h3>Web & Mobile App Developer</h3>
+
+      </div>
+      <div class="aboutus">
+        <p><b>Hi There,</b><br>
+         I’m Noman Ali and i am Front-End Web Developer. It's been 2 years,<br>
+         
+         I’m working as web developer.i have developed many website and also provided my services to college students by getting their projects ready ASAP as a freelancer I have been part of some very good web design projects.<br>
+         I have done my graduation in Computer Science.
+         
+         <b> Skill Set : HTML5, CSS3, JavaScript.</b><br>
+          I'm also learning Back-End Development and looking forward to be a Full Stack Web Developer<br></p>
+
+   </div>    
+          <div class="gallery">
+           <div class="image">
+             <img src="images/1.jpg"/>
+           </div>
+           <div class="image">
+            <img src="images/2.jpg"/>
+          </div><div class="image">
+            <img src="images/3.jpg"/>
+          </div><div class="image">
+            <img src="images/4.jpg"/>
+          </div><div class="image">
+            <img src="images/6.jpg"/>
+          </div><div class="image">
+            <img src="images/7.jpg"/>
+          </div><div class="image">
+            <img src="images/8.jpg"/>
+          </div>
+
+          </div>
+          <div class="contactus">
+            <div class="contactform">
+              <form action="" method="post">
+               <input type="text" name="" class="inputtext" value="First Name:">
+               <input type="text" name="" class="inputtext" value="Last Name:">
+               <input type="text" name="" class="inputtext" value="Your Email:">
+               <textarea cols="4" rows="6" class="inputmessage">Your Messages...!!!</textarea>
+               <input type="button" name="" class="submitbutton" value="submit">
+              </form>
+            </div>
+          </div>
+     </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+      $('a').click(function(){
+            //  alert("i am click");
+            var selected = $(this);
+            $('a').removeClass('active');
+            $(selected).addClass('active');
+      });
+        
+
+        var $a = $('.a'),
+        $b = $('.b'),
+        $c = $('.c'),
+        $d = $('.d'),
+        $home = $('.home'),
+        $aboutus = $('.aboutus');
+        $gallery = $('.gallery'),
+        $contactus = $('.contactus');
+
+        $a.click(function(){
+          $home.fadeIn();
+          $aboutus.fadeOut();
+          $gallery.fadeOut();
+          $contactus.fadeOut();
+        });
+        $b.click(function(){
+          $aboutus.fadeIn();
+          $home.fadeOut();
+          $gallery.fadeOut();
+          $contactus.fadeOut();
+        });
+        $c.click(function(){
+          $gallery.fadeIn();
+          $home.fadeOut();
+          $aboutus.fadeOut();
+          $contactus.fadeOut();
+        });
+        $d.click(function(){
+          $contactus.fadeIn();
+          $home.fadeOut();
+          $aboutus.fadeOut();
+          $gallery.fadeOut();
+          
+        });
+
+
+    });
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
